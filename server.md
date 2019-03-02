@@ -44,6 +44,18 @@
 
 Тип `Hangar`: `Building`.
 
+Тип `Color`:
+
+```
+{
+  "r": "<int>",
+  "g": "<int>",
+  "b": "<int>"
+}
+```
+
+Тип `GameState`:
+
 ```
 {
   "resources": "<int>",
@@ -53,7 +65,7 @@
   "players": [
     {
       "name": "<String>",
-      "color": "<String>",
+      "color": "<Color>",
       "commandCenter": "<CommandCenter>",
       "beacons": ["<Beacon>"],
       "researchCenters": ["<ResearchCenter>],
@@ -112,3 +124,28 @@
 **Дополнительные действия**:
 - игроки уведомляются о сносе здания;
 - очередь обновлений для игрока очищается.
+
+## Изменения игрового состояния
+
+Здание построено (`BuildingBuilt`):
+
+```
+{
+  "type": "BuildingBuilt",
+  "playerIndex": "<int>",
+  "buildingType": "<String>",
+  "x": "<int>",
+  "y": "<int>"
+}
+```
+
+Здание разрушено (`BuildingDestroyed`):
+
+```
+{
+  "type": "BuildingDestroyed`,
+  "playerIndex": "<int>",
+  "buildingType": "<String>",
+  "buildingIndex: "<int>"
+}
+```
