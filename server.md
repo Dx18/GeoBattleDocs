@@ -46,13 +46,13 @@
 
 ```
 {
+  "resources": "<int>",
+  "energy": "<int>",
+  "id": "<int>",
   "players": [
     {
       "name": "<String>",
-      "id"; "<int>",
       "color": "<String>",
-      "resources": "<int>",
-      "energy": "<int>",
       "commandCenter": "<CommandCenter>",
       "beacons": ["<Beacon>"],
       "researchCenters": ["<ResearchCenter>],
