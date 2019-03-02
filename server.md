@@ -48,7 +48,7 @@
 {
   "resources": "<int>",
   "energy": "<int>",
-  "id": "<int>",
+  "playerId": "<int>",
   "playerIndex": "<int>",
   "players": [
     {
