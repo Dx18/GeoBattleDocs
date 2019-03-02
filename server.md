@@ -9,7 +9,7 @@
 
 Отношения объектов игры (очень предварительный вариант):
 
-- Команда **(1..*)**
+- Игрок **(1..*)**
   - Ресурсы **(1)**
   - Энергия **(1)**
   - Здание **(1..*)**
@@ -19,14 +19,58 @@
     - Координаты **(1)**
     - Данные единицы **(1)** (для каждого вида единицы техники данные разные)
 
-*Примечание*: отношения объектов игры отображают настоящую структуру не полностью. Дальнейшая информация будет позже.
+## Структура игры
+
+Тип `Building`:
+
+```
+{
+  "x": "<int>",
+  "y": "<int>"
+}
+```
+
+Тип `CommandCenter`: `Building`.
+
+Тип `Beacon`: `Building`.
+
+Тип `ResearchCenter`: `Building`.
+
+Тип `Turret`: `Building`.
+
+Тип `Generator`: `Building`.
+
+Тип `Mine`: `Building`.
+
+Тип `Hangar`: `Building`.
+
+```
+{
+  "players": [
+    {
+      "name": "<String>",
+      "id"; "<int>",
+      "color": "<String>",
+      "resources": "<int>",
+      "energy": "<int>",
+      "commandCenter": "<CommandCenter>",
+      "beacons": ["<Beacon>"],
+      "researchCenters": ["<ResearchCenter>],
+      "turrets": ["<Turret>"],
+      "generators": ["<Generator>"],
+      "mines": ["<Mine>"],
+      "hangars": ["<Hangar>"]
+    }
+  ]
+}
+```
 
 ## StateRequestEvent
 
 **Клиент -> Сервер**: ничего.
 
 **Сервер -> Клиент**:
-- данные об игре (структура показана выше (на самом деле, ещё не показана)).
+- данные об игре (структура показана выше).
 
 ## UpdateRequestEvent
 
