@@ -69,7 +69,7 @@
       "color": "<Color>",
       "commandCenter": "<CommandCenter>",
       "beacons": ["<Beacon>"],
-      "researchCenters": ["<ResearchCenter>],
+      "researchCenters": ["<ResearchCenter>"],
       "turrets": ["<Turret>"],
       "generators": ["<Generator>"],
       "mines": ["<Mine>"],
