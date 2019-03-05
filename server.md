@@ -79,19 +79,47 @@
 }
 ```
 
+## Вспомогательные типы для ответов сервера
+
+Тип `BuildInfo`:
+
+```
+{
+  "playerIndex": "<int>",
+  "buildingType": "<String>",
+  "building": "<?: Building>"
+}
+```
+
+Тип `DestroyInfo`:
+
+```
+{
+  "playerIndex": "<int>",
+  "buildingType": "<String>",
+  "id": "<int>"
+}
+```
+
 ## StateRequestEvent
 
 **Клиент -> Сервер**: ничего.
 
 **Сервер -> Клиент**:
-- данные об игре (структура показана выше).
+- данные об игре (`GameState`; структура показана выше).
 
 ## UpdateRequestEvent
 
 **Клиент -> Сервер**: ничего
 
 **Сервер -> Клиент**:
-- изменения игрового состояния, которые нужно передать игроку.
+- изменения игрового состояния, которые нужно передать игроку (см. ниже).
+
+```
+{
+  "updates": ["<?: GameStateUpdate>"]
+}
+```
 
 **Дополнительные действия**: очередь обновлений для игрока очищается.
 
@@ -103,6 +131,27 @@
 
 **Сервер -> Клиент**:
 - результат постройки.
+
+```
+{
+  "type": "Built",
+  "info": "<BuildInfo>"
+}
+
+{
+  "type": "CollisionFound"
+}
+
+{
+  "type": "NotEnoughResources",
+  "required": "<int>"
+}
+
+{
+  "type": "BuildingLimitExceeded",
+  "max": "<int>"
+}
+```
 
 **Дополнительные действия**:
 - здание добавляется в игру;
@@ -116,31 +165,37 @@
 **Сервер -> Клиент**:
 - результат сноса.
 
+```
+{
+  "type": "Destroyed",
+  "info": "<DestroyInfo>"
+}
+
+{
+  "type": "BuildingIsRequired"
+}
+```
+
 **Дополнительные действия**:
 - здание сносится;
 - игроки уведомляются о сносе здания.
 
 ## Изменения игрового состояния
 
-Здание построено (`BuildingBuilt`):
+Здание построено (`BuildingBuilt`: `GameStateUpdate`):
 
 ```
 {
   "type": "BuildingBuilt",
-  "playerIndex": "<int>",
-  "buildingType": "<String>",
-  "x": "<int>",
-  "y": "<int>"
+  "info": "<BuildInfo>"
 }
 ```
 
-Здание разрушено (`BuildingDestroyed`):
+Здание разрушено (`BuildingDestroyed`: `GameStateUpdate`):
 
 ```
 {
-  "type": "BuildingDestroyed`,
-  "playerIndex": "<int>",
-  "buildingType": "<String>",
-  "buildingIndex: "<int>"
+  "type": "BuildingDestroyed",
+  "info": "<DestroyInfo>"
 }
 ```
