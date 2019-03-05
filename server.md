@@ -23,7 +23,7 @@
 
 Тип `Building`:
 
-```
+```json
 {
   "x": "<int>",
   "y": "<int>",
@@ -47,7 +47,7 @@
 
 Тип `Color`:
 
-```
+```json
 {
   "r": "<int>",
   "g": "<int>",
@@ -57,7 +57,7 @@
 
 Тип `GameState`:
 
-```
+```json
 {
   "resources": "<int>",
   "energy": "<int>",
@@ -83,7 +83,7 @@
 
 Тип `BuildInfo`:
 
-```
+```json
 {
   "playerIndex": "<int>",
   "buildingType": "<String>",
@@ -93,7 +93,7 @@
 
 Тип `DestroyInfo`:
 
-```
+```json
 {
   "playerIndex": "<int>",
   "buildingType": "<String>",
@@ -115,7 +115,7 @@
 **Сервер -> Клиент**:
 - изменения игрового состояния, которые нужно передать игроку (см. ниже).
 
-```
+```json
 {
   "updates": ["<?: GameStateUpdate>"]
 }
@@ -132,7 +132,7 @@
 **Сервер -> Клиент**:
 - результат постройки.
 
-```
+```json
 {
   "type": "Built",
   "info": "<BuildInfo>"
@@ -165,7 +165,7 @@
 **Сервер -> Клиент**:
 - результат сноса.
 
-```
+```json
 {
   "type": "Destroyed",
   "info": "<DestroyInfo>"
@@ -184,7 +184,7 @@
 
 Здание построено (`BuildingBuilt`: `GameStateUpdate`):
 
-```
+```json
 {
   "type": "BuildingBuilt",
   "info": "<BuildInfo>"
@@ -193,7 +193,7 @@
 
 Здание разрушено (`BuildingDestroyed`: `GameStateUpdate`):
 
-```
+```json
 {
   "type": "BuildingDestroyed",
   "info": "<DestroyInfo>"
