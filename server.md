@@ -25,6 +25,7 @@
 
 ```json
 {
+  "type": "<String>",
   "x": "<int>",
   "y": "<int>",
   "id": "<int>"
@@ -81,23 +82,12 @@
 
 ## Вспомогательные типы для ответов сервера
 
-Тип `BuildInfo`:
+Тип `BuildTransaction`:
 
 ```json
 {
   "playerIndex": "<int>",
-  "buildingType": "<String>",
   "building": "<?: Building>"
-}
-```
-
-Тип `DestroyInfo`:
-
-```json
-{
-  "playerIndex": "<int>",
-  "buildingType": "<String>",
-  "id": "<int>"
 }
 ```
 
@@ -135,7 +125,7 @@
 ```json
 {
   "type": "Built",
-  "info": "<BuildInfo>"
+  "info": "<BuildTransaction>"
 }
 
 {
@@ -168,7 +158,7 @@
 ```json
 {
   "type": "Destroyed",
-  "info": "<DestroyInfo>"
+  "info": "<BuildTransaction>"
 }
 
 {
@@ -187,7 +177,7 @@
 ```json
 {
   "type": "BuildingBuilt",
-  "info": "<BuildInfo>"
+  "info": "<BuildTransaction>"
 }
 ```
 
@@ -196,6 +186,6 @@
 ```json
 {
   "type": "BuildingDestroyed",
-  "info": "<DestroyInfo>"
+  "info": "<BuildTransaction>"
 }
 ```
