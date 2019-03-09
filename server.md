@@ -82,7 +82,7 @@
 
 ## Вспомогательные типы для ответов сервера
 
-Тип `BuildTransaction`:
+Тип `BuildTransactionInfo`:
 
 ```json
 {
@@ -125,7 +125,7 @@
 ```json
 {
   "type": "Built",
-  "info": "<BuildTransaction>"
+  "info": "<BuildTransactionInfo>"
 }
 
 {
@@ -158,7 +158,7 @@
 ```json
 {
   "type": "Destroyed",
-  "info": "<BuildTransaction>"
+  "info": "<BuildTransactionInfo>"
 }
 
 {
@@ -177,7 +177,7 @@
 ```json
 {
   "type": "BuildingBuilt",
-  "info": "<BuildTransaction>"
+  "info": "<BuildTransactionInfo>"
 }
 ```
 
@@ -186,6 +186,6 @@
 ```json
 {
   "type": "BuildingDestroyed",
-  "info": "<BuildTransaction>"
+  "info": "<BuildTransactionInfo>"
 }
 ```
