@@ -141,6 +141,10 @@
   "type": "BuildingLimitExceeded",
   "max": "<int>"
 }
+
+{
+  "type": "NoCommandCenter"
+}
 ```
 
 **Дополнительные действия**:
