@@ -6,7 +6,7 @@
 
 Описание типов построек: [buildings.md](buildings.md).
 
-Описание типов единиц техники: [vehicles.md](vehicles.md).
+Описание воздушных юнитов: [air_units.md](air_units.md).
 
 Описание взаимодействия сервера и клиента: [server.md](server.md).
 
