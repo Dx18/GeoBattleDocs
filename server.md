@@ -72,6 +72,10 @@
 {
   "type": "NoCommandCenter"
 }
+
+{
+  "type": "NotInTerritory"
+}
 ```
 
 **Дополнительные действия**:
