@@ -7,7 +7,8 @@
   "type": "<String>",
   "x": "<int>",
   "y": "<int>",
-  "id": "<int>"
+  "id": "<int>",
+  "health": "<int>"
 }
 ```
 
@@ -24,6 +25,23 @@
 Тип `Mine`: `Building`.
 
 Тип `Hangar`: `Building`.
+
+Тип `Unit`:
+
+```json
+{
+  "type": "<String>",
+  "x": "<double>",
+  "y": "<double>",
+  "direction": "<double>",
+  "id": "<int>",
+  "health": "<int>"
+}
+```
+
+Тип `Bomber`: `Unit`.
+
+Тип `Spotter`: `Unit`.
 
 Тип `Color`:
 
@@ -53,7 +71,9 @@
       "turrets": ["<Turret>"],
       "generators": ["<Generator>"],
       "mines": ["<Mine>"],
-      "hangars": ["<Hangar>"]
+      "hangars": ["<Hangar>"],
+      "bombers": ["<Bomber>"],
+      "spotters": ["<Spotter>"]
     }
   ]
 }

@@ -17,3 +17,21 @@
   "info": "<BuildTransactionInfo>"
 }
 ```
+
+Юнит построен (`UnitBuilt`: `GameStateUpdate`):
+
+```json
+{
+  "type": "UnitBuilt",
+  "info": "<UnitTransactionInfo>"
+}
+```
+
+Юнит разрушен (`UnitDestroyed`: `GameStateUpdate`):
+
+```json
+{
+  "type": "UnitDestroyed",
+  "info": "<UnitTransactionInfo>"
+}
+```
