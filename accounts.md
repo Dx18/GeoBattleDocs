@@ -15,6 +15,7 @@
 
 ```json
 {
+  "type": "Registration",
   "name": "<String>",
   "password": "<String>",
   "color": "<Color>"
@@ -35,6 +36,7 @@
 
 ```json
 {
+  "type": "Authorization",
   "name": "<String>",
   "password": "<String>"
 }
