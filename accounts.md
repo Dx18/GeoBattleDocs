@@ -24,9 +24,41 @@
 
 **Сервер -> Клиент**:
 
+При успехе:
+
 ```json
 {
+  "type": "Success",
   "authInfo": "<AuthInfo>"
+}
+```
+
+При неудаче:
+
+```json
+{
+  "type": "NoName"
+}
+
+{
+  "type": "NoPassword"
+}
+
+{
+  "type": "InvalidNameLength",
+  "actual": "<int>",
+  "min": "<int>",
+  "max": "<int>"
+}
+
+{
+  "type": "InvalidPasswordLength",
+  "actual": "<int>",
+  "min": "<int>"
+}
+
+{
+  "type": "InvalidNameSymbols"
 }
 ```
 
@@ -44,8 +76,19 @@
 
 **Сервер -> Клиент**:
 
+При успехе:
+
 ```json
 {
+  "type": "Success",
   "authInfo": "<AuthInfo>"
+}
+```
+
+При неудаче:
+
+```json
+{
+  "type": "PairNotFound"
 }
 ```
