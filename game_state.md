@@ -24,7 +24,14 @@
 
 Тип `Mine`: `Building`.
 
-Тип `Hangar`: `Building`.
+Тип `Hangar`: `Building`:
+
+```json
+{
+  // ... Поля Building...
+  "unitIds": ["<int>"]
+}
+```
 
 Тип `Unit`:
 
@@ -35,7 +42,9 @@
   "y": "<double>",
   "direction": "<double>",
   "id": "<int>",
-  "health": "<int>"
+  "health": "<int>",
+  "hangarId": "<int>",
+  "hangarSlot": "<int>"
 }
 ```
 
