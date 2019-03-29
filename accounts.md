@@ -60,6 +60,10 @@
 {
   "type": "InvalidNameSymbols"
 }
+
+{
+  "type": "NameExists"
+}
 ```
 
 # Авторизация

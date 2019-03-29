@@ -8,7 +8,7 @@
   "x": "<int>",
   "y": "<int>",
   "id": "<int>",
-  "health": "<int>"
+  "health": "<float>"
 }
 ```
 
@@ -28,7 +28,6 @@
 
 ```json
 {
-  // ... Поля Building...
   "unitIds": ["<int>"]
 }
 ```
@@ -42,7 +41,7 @@
   "y": "<double>",
   "direction": "<double>",
   "id": "<int>",
-  "health": "<int>",
+  "health": "<float>",
   "hangarId": "<int>",
   "hangarSlot": "<int>"
 }
@@ -66,8 +65,8 @@
 
 ```json
 {
-  "resources": "<int>",
-  "energy": "<int>",
+  "resources": "<float>",
+  "energy": "<float>",
   "playerId": "<int>",
   "playerIndex": "<int>",
   "players": [

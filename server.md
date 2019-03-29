@@ -89,7 +89,8 @@
 ```json
 {
   "type": "Built",
-  "info": "<BuildTransactionInfo>"
+  "info": "<BuildTransactionInfo>",
+  "cost": "<int>"
 }
 
 {
@@ -172,8 +173,9 @@
 
 ```json
 {
-  "type": "UnitBuilt",
-  "info": "<UnitTransactionInfo>"
+  "type": "Built",
+  "info": "<UnitTransactionInfo>",
+  "cost": "<int>"
 }
 
 {
