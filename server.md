@@ -190,10 +190,6 @@
 {
   "type": "NoPlaceInHangar"
 }
-
-{
-  "type": "DoesNotExist"
-}
 ```
 
 **Дополнительные действия**:

@@ -8,11 +8,14 @@
   "x": "<int>",
   "y": "<int>",
   "id": "<int>",
-  "health": "<float>"
+  "playerId": "<int>",
+  "sectorId": "<int>"
 }
 ```
 
-Тип `CommandCenter`: `Building`.
+(**Вот здесь надо подумать (про наследование)...**)
+
+Тип `CommandCenter`: `Beacon`.
 
 Тип `Beacon`: `Building`.
 
@@ -24,7 +27,7 @@
 
 Тип `Mine`: `Building`.
 
-Тип `Hangar`: `Building`:
+Тип `Hangar`: `Building`: (**Лучше не читать!!!**)
 
 ```json
 {
@@ -32,7 +35,7 @@
 }
 ```
 
-Тип `Unit`:
+Тип `Unit`: (**Этот раздел будет дорабатываться. Не читать!!!!**)
 
 ```json
 {
@@ -66,22 +69,24 @@
 ```json
 {
   "resources": "<float>",
-  "energy": "<float>",
   "playerId": "<int>",
   "playerIndex": "<int>",
   "players": [
     {
       "name": "<String>",
+      "playerId": "<int>",
       "color": "<Color>",
       "commandCenter": "<CommandCenter>",
-      "beacons": ["<Beacon>"],
-      "researchCenters": ["<ResearchCenter>"],
-      "turrets": ["<Turret>"],
-      "generators": ["<Generator>"],
-      "mines": ["<Mine>"],
-      "hangars": ["<Hangar>"],
-      "bombers": ["<Bomber>"],
-      "spotters": ["<Spotter>"]
+      "sectors": [
+        {
+          "health": "<float>",
+          "maxHealth": "<float>",
+          "energy": "<int>",
+          "beacon": "<Beacon>",
+          "buildings": ["<?: Building>"]
+        }
+      ],
+      "units": ["<?: Unit>"]
     }
   ]
 }
