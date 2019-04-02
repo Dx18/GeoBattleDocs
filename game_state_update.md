@@ -26,12 +26,3 @@
   "info": "<UnitTransactionInfo>"
 }
 ```
-
-Юнит разрушен (`UnitDestroyed`: `GameStateUpdate`):
-
-```json
-{
-  "type": "UnitDestroyed",
-  "info": "<UnitTransactionInfo>"
-}
-```

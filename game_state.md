@@ -64,6 +64,33 @@
 }
 ```
 
+Тип `UnitGroupMovingInfo`:
+
+```json
+{
+  "arriveTime": "<double>",
+  "arriveX": "<int>",
+  "arriveY": "<int>",
+  "startReturnTime": "<double>",
+  "endReturnTime": "<double>"
+}
+```
+
+Тип `TimePoint`:
+
+```json
+{
+  "time": "<double>",
+  "sectorHealth": "<double>",
+  "planeGroupsHealth": [
+    {
+      "hangarId": "<int>",
+      "newHealth": "<double>"
+    }
+  ]
+}
+```
+
 Тип `GameState`:
 
 ```json
@@ -76,17 +103,27 @@
       "name": "<String>",
       "playerId": "<int>",
       "color": "<Color>",
-      "commandCenter": "<CommandCenter>",
       "sectors": [
         {
+          "x": "<int>",
+          "y": "<int>",
+          "sectorId": "<int>",
           "health": "<float>",
           "maxHealth": "<float>",
           "energy": "<int>",
-          "beacon": "<Beacon>",
           "buildings": ["<?: Building>"]
         }
       ],
       "units": ["<?: Unit>"]
+    }
+  ],
+  "attackEvents": [
+    {
+      "attackerId": "<int>",
+      "victimId": "<int>",
+      "sectorId": "<int>",
+      "unitGroupMoving": ["<UnitGroupMovingInfo>"],
+      "timePoints": ["<TimePoint>"]
     }
   ]
 }
