@@ -68,11 +68,11 @@
 
 ```json
 {
+  "hangarId": "<int>",
   "arriveTime": "<double>",
   "arriveX": "<int>",
   "arriveY": "<int>",
-  "startReturnTime": "<double>",
-  "endReturnTime": "<double>"
+  "returnTime": "<double>"
 }
 ```
 
@@ -82,10 +82,10 @@
 {
   "time": "<double>",
   "sectorHealth": "<double>",
-  "planeGroupsHealth": [
+  "unitGroupsHealth": [
     {
       "hangarId": "<int>",
-      "newHealth": "<double>"
+      "health": "<double>"
     }
   ]
 }
