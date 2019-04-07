@@ -1,5 +1,17 @@
 # Структура игрового состояния
 
+Тип `Sector`:
+
+```json
+{
+  "x": "<int>",
+  "y": "<int>",
+  "sectorId": "<int>",
+  "health": "<float>",
+  "buildings": ["<?: Building>"]
+}
+```
+
 Тип `Building`:
 
 ```json
@@ -116,13 +128,7 @@
       "playerId": "<int>",
       "color": "<Color>",
       "sectors": [
-        {
-          "x": "<int>",
-          "y": "<int>",
-          "sectorId": "<int>",
-          "health": "<float>",
-          "buildings": ["<?: Building>"]
-        }
+        
       ],
       "units": ["<?: Unit>"]
     }
