@@ -25,11 +25,20 @@
 
 ```json
 {
-  "unitCount": "<int>"
+  "units": "<UnitGroup>"
 }
 ```
 
-Тип `Unit`: (**ТОЛЬКО НА СТОРОНЕ КЛИЕНТА!!!!**)
+Тип `UnitGroup`:
+
+```json
+{
+  "units": ["<Unit>"],
+  "health": "<float>"
+}
+```
+
+Тип `Unit` (на стороне клиента):
 
 ```json
 {
@@ -38,7 +47,17 @@
   "y": "<double>",
   "direction": "<double>",
   "id": "<int>",
-  "health": "<float>",
+  "hangarId": "<int>",
+  "hangarSlot": "<int>"
+}
+```
+
+Тип `Unit` (на стороне сервера):
+
+```json
+{
+  "type": "<String>",
+  "id": "<int>",
   "hangarId": "<int>",
   "hangarSlot": "<int>"
 }
