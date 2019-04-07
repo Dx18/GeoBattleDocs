@@ -24,7 +24,7 @@
 ```json
 {
   "playerIndex": "<int>",
-  "unit": "<?: Unit>"
+  "hangarId": "<int>"
 }
 ```
 
@@ -113,6 +113,10 @@
 
 {
   "type": "NotInTerritory"
+}
+
+{
+  "type": "OnSectorBound"
 }
 ```
 

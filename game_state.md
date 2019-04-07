@@ -13,12 +13,6 @@
 }
 ```
 
-(**Вот здесь надо подумать (про наследование)...**)
-
-Тип `CommandCenter`: `Beacon`.
-
-Тип `Beacon`: `Building`.
-
 Тип `ResearchCenter`: `Building`.
 
 Тип `Turret`: `Building`.
@@ -27,15 +21,15 @@
 
 Тип `Mine`: `Building`.
 
-Тип `Hangar`: `Building`: (**Лучше не читать!!!**)
+Тип `Hangar`: `Building`:
 
 ```json
 {
-  "unitIds": ["<int>"]
+  "unitCount": "<int>"
 }
 ```
 
-Тип `Unit`: (**Этот раздел будет дорабатываться. Не читать!!!!**)
+Тип `Unit`: (**ТОЛЬКО НА СТОРОНЕ КЛИЕНТА!!!!**)
 
 ```json
 {
@@ -52,8 +46,6 @@
 
 Тип `Bomber`: `Unit`.
 
-Тип `Spotter`: `Unit`.
-
 Тип `Color`:
 
 ```json
@@ -68,11 +60,11 @@
 
 ```json
 {
+  "hangarId": "<int>",
   "arriveTime": "<double>",
   "arriveX": "<int>",
   "arriveY": "<int>",
-  "startReturnTime": "<double>",
-  "endReturnTime": "<double>"
+  "returnTime": "<double>"
 }
 ```
 
@@ -85,7 +77,7 @@
   "planeGroupsHealth": [
     {
       "hangarId": "<int>",
-      "newHealth": "<double>"
+      "health": "<double>"
     }
   ]
 }
@@ -95,6 +87,7 @@
 
 ```json
 {
+  "serverTime": "<double>",
   "resources": "<float>",
   "playerId": "<int>",
   "playerIndex": "<int>",
@@ -109,8 +102,6 @@
           "y": "<int>",
           "sectorId": "<int>",
           "health": "<float>",
-          "maxHealth": "<float>",
-          "energy": "<int>",
           "buildings": ["<?: Building>"]
         }
       ],
