@@ -74,7 +74,7 @@
 {
   "time": "<double>",
   "sectorHealth": "<double>",
-  "planeGroupsHealth": [
+  "unitGroupsHealth": [
     {
       "hangarId": "<int>",
       "health": "<double>"
