@@ -25,7 +25,9 @@
 ```json
 {
   "playerIndex": "<int>",
-  "sector": "<Sector>"
+  "x": "<int>",
+  "y": "<int>",
+  "id": "<int>"
 }
 ```
 
@@ -34,7 +36,9 @@
 ```json
 {
   "playerIndex": "<int>",
-  "hangarId": "<int>"
+  "type": "<String>",
+  "hangarId": "<int>",
+  "hangarSlot": "<int>"
 }
 ```
 
@@ -191,11 +195,7 @@
 }
 
 {
-  "type": "NotAligned"
-}
-
-{
-  "type": "NotNeighbour"
+  "type": "WrongPosition"
 }
 ```
 
