@@ -37,11 +37,11 @@
 
 ```json
 {
-  "type": "NoName"
+  "type": "NoName" - а не проще ли это на клиенте проверять, чем пустые строки отсылать?
 }
 
 {
-  "type": "NoPassword"
+  "type": "NoPassword" - а не проще ли это на клиенте проверять, чем пустые строки отсылать?
 }
 
 {
@@ -59,6 +59,10 @@
 
 {
   "type": "InvalidNameSymbols"
+}
+
+{
+  "type": "EmailExists"
 }
 
 {
