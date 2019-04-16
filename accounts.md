@@ -7,6 +7,8 @@
   "id": "<int>",
   "token": "<String>"
 }
+
+email добавим в конце если успеем, но передавать его всё равно стоит.
 ```
 
 # Регистрация
@@ -19,6 +21,7 @@
   "name": "<String>",
   "password": "<String>",
   "color": "<Color>"
+  "email": "<String>"
 }
 ```
 
