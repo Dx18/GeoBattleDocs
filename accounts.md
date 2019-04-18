@@ -64,6 +64,10 @@
 {
   "type": "NameExists"
 }
+
+{
+  "type": "PasswordExists"
+}
 ```
 
 # Авторизация
