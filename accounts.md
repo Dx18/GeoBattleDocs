@@ -17,6 +17,7 @@
 {
   "type": "Registration",
   "name": "<String>",
+  "email": "<String>",
   "password": "<String>",
   "color": "<Color>"
 }
@@ -45,6 +46,10 @@
 }
 
 {
+  "type": "NoEmail"
+}
+
+{
   "type": "InvalidNameLength",
   "actual": "<int>",
   "min": "<int>",
@@ -63,6 +68,14 @@
 
 {
   "type": "NameExists"
+}
+
+{
+  "type": "InvalidEmail"
+}
+
+{
+  "type": "EmailExists"
 }
 ```
 

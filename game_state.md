@@ -104,11 +104,11 @@
 ```json
 {
   "time": "<double>",
-  "sectorHealth": "<double>",
+  "sectorHealth": "<float>",
   "unitGroupsHealth": [
     {
       "hangarId": "<int>",
-      "health": "<double>"
+      "health": "<float>"
     }
   ]
 }
@@ -122,6 +122,7 @@
   "resources": "<float>",
   "playerId": "<int>",
   "playerIndex": "<int>",
+  "time": "<double>",
   "players": [
     {
       "name": "<String>",
