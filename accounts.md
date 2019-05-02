@@ -38,15 +38,11 @@
 
 ```json
 {
-  "type": "NoName"
+  "type": "InvalidEmail"
 }
 
 {
-  "type": "NoPassword"
-}
-
-{
-  "type": "NoEmail"
+  "type": "EmailExists"
 }
 
 {
@@ -68,14 +64,6 @@
 
 {
   "type": "NameExists"
-}
-
-{
-  "type": "InvalidEmail"
-}
-
-{
-  "type": "EmailExists"
 }
 ```
 
