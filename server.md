@@ -57,7 +57,7 @@
 
 ```json
 {
-  "type": "GameState",
+  "type": "StateRequestSuccess",
   "gameState": "<GameState>"
 }
 
@@ -83,7 +83,7 @@
 
 ```json
 {
-  "type": "GameStateUpdates",
+  "type": "UpdateRequestSuccess",
   "updates": ["<?: GameStateUpdate>"]
 }
 
@@ -207,6 +207,11 @@
 {
   "type": "NotEnoughResources",
   "required": "<int>"
+}
+
+{
+  "type": "IntersectsWithEnemy",
+  "enemyIndex": "<int>"
 }
 
 {
