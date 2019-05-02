@@ -7,7 +7,6 @@
   "x": "<int>",
   "y": "<int>",
   "sectorId": "<int>",
-  "health": "<float>",
   "buildings": ["<?: Building>"]
 }
 ```
@@ -120,17 +119,13 @@
 {
   "resources": "<float>",
   "playerId": "<int>",
-  "playerIndex": "<int>",
   "time": "<double>",
   "players": [
     {
       "name": "<String>",
       "playerId": "<int>",
       "color": "<Color>",
-      "sectors": [
-        
-      ],
-      "units": ["<?: Unit>"]
+      "sectors": ["<Sector>"]
     }
   ],
   "attackEvents": [
