@@ -118,7 +118,6 @@
 
 ```json
 {
-  "serverTime": "<double>",
   "resources": "<float>",
   "playerId": "<int>",
   "playerIndex": "<int>",
