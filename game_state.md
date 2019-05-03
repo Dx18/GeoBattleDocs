@@ -128,7 +128,7 @@
       "sectors": ["<Sector>"]
     }
   ],
-  "attackEvents": [
+  "attackScripts": [
     {
       "attackerId": "<int>",
       "victimId": "<int>",
