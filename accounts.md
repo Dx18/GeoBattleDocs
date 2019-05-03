@@ -15,7 +15,7 @@
 
 ```json
 {
-  "type": "Registration",
+  "type": "RegistrationEvent",
   "name": "<String>",
   "email": "<String>",
   "password": "<String>",
@@ -73,7 +73,7 @@
 
 ```json
 {
-  "type": "Authorization",
+  "type": "AuthorizationEvent",
   "name": "<String>",
   "password": "<String>"
 }
