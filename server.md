@@ -140,6 +140,10 @@
 }
 
 {
+  "type": "SectorBlocked"
+}
+
+{
   "type": "WrongAuthInfo"
 }
 ```
@@ -169,6 +173,10 @@
 {
   "type": "Destroyed",
   "info": "<BuildTransactionInfo>"
+}
+
+{
+  "type": "SectorBlocked"
 }
 
 {
@@ -264,6 +272,10 @@
 
 {
   "type": "NoPlaceInHangar"
+}
+
+{
+  "type": "SectorBlocked"
 }
 
 {
