@@ -65,6 +65,15 @@
 {
   "type": "NameExists"
 }
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
+}
 ```
 
 # Авторизация
@@ -95,5 +104,14 @@
 ```json
 {
   "type": "PairNotFound"
+}
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
 }
 ```

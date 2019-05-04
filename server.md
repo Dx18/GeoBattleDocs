@@ -147,6 +147,15 @@
 {
   "type": "WrongAuthInfo"
 }
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
+}
 ```
 
 **Дополнительные действия**:
@@ -177,11 +186,24 @@
 }
 
 {
+  "type": "NotOwningBuilding"
+}
+
+{
   "type": "SectorBlocked"
 }
 
 {
   "type": "WrongAuthInfo"
+}
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
 }
 ```
 
@@ -230,6 +252,15 @@
 {
   "type": "WrongAuthInfo"
 }
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
+}
 ```
 
 **Дополнительные действия**:
@@ -268,10 +299,6 @@
 }
 
 {
-  "type": "NotHangar"
-}
-
-{
   "type": "NoPlaceInHangar"
 }
 
@@ -281,6 +308,15 @@
 
 {
   "type": "WrongAuthInfo"
+}
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
 }
 ```
 
@@ -323,10 +359,19 @@
 }
 
 {
-  "type": "NotHangars"
+  "type": "HangarsAlreadyUsed"
 }
 
 {
-  "type": "HangarsAlreadyUsed"
+  "type": "WrongAuthInfo"
+}
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
 }
 ```
