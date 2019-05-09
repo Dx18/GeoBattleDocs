@@ -113,6 +113,16 @@
 }
 ```
 
+Тип `ResearchInfo`:
+
+```json
+{
+  "turretDamageLevel": "<int>",
+  "unitDamageLevel": "<int>",
+  "generatorEfficiencyLevel": "<int>"
+}
+```
+
 Тип `GameState`:
 
 ```json
@@ -120,6 +130,7 @@
   "resources": "<float>",
   "playerId": "<int>",
   "time": "<double>",
+  "researchInfo": "<ResearchInfo>",
   "players": [
     {
       "name": "<String>",
