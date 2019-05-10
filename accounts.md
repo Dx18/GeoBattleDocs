@@ -30,7 +30,7 @@
 ```json
 {
   "type": "Success",
-  "authInfo": "<AuthInfo>"
+  "tempPlayerId": "<int>"
 }
 ```
 
@@ -113,5 +113,41 @@
 {
   "type": "IncorrectData",
   "field": "<String>"
+}
+```
+
+# Подтверждение электронной почты
+
+**Клиент -> Сервер**:
+
+```json
+{
+  "type": "EmailConfirmationEvent",
+  "tempPlayerId": "<int>",
+  "code": "<int>"
+}
+```
+
+**Сервер -> Клиент**:
+
+При успехе:
+
+```json
+{
+  "type": "EmailConfirmed",
+  "authInfo": "<AuthInfo>"
+}
+```
+
+При неудаче:
+
+```json
+{
+  "type": "WrongCode",
+  "triesLeft": "<int>"
+}
+
+{
+  "type": "DoesNotExist"
 }
 ```
