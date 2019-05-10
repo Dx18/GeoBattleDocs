@@ -402,6 +402,10 @@
 }
 
 {
+  "type": "NoResearchCenter"
+}
+
+{
   "type": "NotEnoughResources",
   "required": "<int>"
 }
