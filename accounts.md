@@ -30,7 +30,7 @@
 ```json
 {
   "type": "Success",
-  "tempPlayerId": "<int>"
+  "name": "<String>"
 }
 ```
 
@@ -123,7 +123,7 @@
 ```json
 {
   "type": "EmailConfirmationEvent",
-  "tempPlayerId": "<int>",
+  "name": "<String>",
   "code": "<int>"
 }
 ```
