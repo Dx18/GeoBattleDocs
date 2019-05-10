@@ -17,3 +17,5 @@
 Описание взаимодействия сервера и клиента при авторизации и регистрации: [accounts.md](accounts.md).
 
 Описание исследований: [research.md](research.md).
+
+Описание сценариев атаки: [attack_script.md](attack_script.md).
