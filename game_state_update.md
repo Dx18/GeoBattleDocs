@@ -32,7 +32,7 @@
 ```json
 {
   "type": "SectorBuilt",
-  "info": "<SectorBuiltInfo>"
+  "info": "<SectorTransactionInfo>"
 }
 ```
 
