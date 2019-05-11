@@ -26,3 +26,13 @@
   "info": "<UnitTransactionInfo>"
 }
 ```
+
+Сектор построен (`SectorBuilt`: `GameStateUpdate`):
+
+```json
+{
+  "type": "SectorBuilt",
+  "info": "<SectorTransactionInfo>"
+}
+```
+
