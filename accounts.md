@@ -150,6 +150,15 @@
 {
   "type": "DoesNotExist"
 }
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
+}
 ```
 
 # Переотправка эл. письма для подтверждения эл. почты
@@ -178,5 +187,14 @@
 ```json
 {
   "type": "DoesNotExist"
+}
+
+{
+  "type": "MalformedJson"
+}
+
+{
+  "type": "IncorrectData",
+  "field": "<String>"
 }
 ```
