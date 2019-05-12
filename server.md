@@ -280,7 +280,7 @@
   "type": "UnitBuildEvent",
   "authInfo": "<AuthInfo>",
   "unitType": "<String>",
-  "building": "<BuildTransactionInfo>"
+  "hangarId": "<int>"
 }
 ```
 
