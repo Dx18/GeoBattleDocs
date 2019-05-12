@@ -352,7 +352,7 @@
 ```json
 {
   "type": "AttackStarted",
-  "attackScript": "AttackScript"
+  "attackScript": "<AttackScript>"
 }
 
 {
