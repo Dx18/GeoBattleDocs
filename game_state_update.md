@@ -55,3 +55,12 @@
   "playerId": "<int>"
 }
 ```
+
+Атака началась (`AttackStarted`: `GameStateUpdate`):
+
+```json
+{
+  "type": "AttackStarted",
+  "attackScript": "<AttackScript>"
+}
+```
