@@ -86,6 +86,7 @@
 ```json
 {
   "type": "UpdateRequestSuccess",
+  "time": "<float>",
   "updates": ["<?: GameStateUpdate>"]
 }
 
