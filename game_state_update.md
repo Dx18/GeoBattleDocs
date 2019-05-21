@@ -36,3 +36,22 @@
 }
 ```
 
+Игрок добавлен (`PlayerAdded`: `GameStateUpdate`):
+
+```json
+{
+  "type": "PlayerAdded",
+  "name": "<String>",
+  "playerId": "<int>",
+  "color": "<Color>"
+}
+```
+
+Игрок удалён (`PlayerRemoved`: `GameStateUpdate`):
+
+```json
+{
+  "type": "PlayerRemoved",
+  "playerId": "<int>"
+}
+```

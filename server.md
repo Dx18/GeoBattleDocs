@@ -76,7 +76,8 @@
 ```json
 {
   "type": "UpdateRequestEvent",
-  "authInfo": "<AuthInfo>"
+  "authInfo": "<AuthInfo>",
+  "lastUpdateTime": "<double>"
 }
 ```
 
@@ -86,6 +87,10 @@
 ```json
 {
   "type": "UpdateRequestSuccess",
+  "resources": "<int>",
+  "playerId": "<int>",
+  "time": "<double>",
+  "researchInfo": "<ResearchInfo>",
   "updates": ["<?: GameStateUpdate>"]
 }
 
