@@ -89,7 +89,6 @@
 {
   "type": "UpdateRequestSuccess",
   "resources": "<int>",
-  "playerId": "<int>",
   "time": "<double>",
   "researchInfo": "<ResearchInfo>",
   "updates": ["<?: GameStateUpdate>"]
@@ -404,6 +403,7 @@
 {
   "type": "Researched",
   "researchType": "<String>",
+  "level": "<int>",
   "cost": "<int>"
 }
 

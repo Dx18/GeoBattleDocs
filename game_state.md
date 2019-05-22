@@ -7,6 +7,7 @@
   "x": "<int>",
   "y": "<int>",
   "sectorId": "<int>",
+  "isBlocked": "<boolean>",
   "buildings": ["<?: Building>"]
 }
 ```
