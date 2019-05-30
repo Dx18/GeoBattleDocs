@@ -95,6 +95,11 @@
 }
 
 {
+  "type": "StateRequestSuccess",
+  "gameState": "<GameState>"
+}
+
+{
   "type": "WrongAuthInfo"
 }
 ```
