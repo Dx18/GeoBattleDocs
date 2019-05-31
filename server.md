@@ -68,6 +68,10 @@
 {
   "type": "WrongAuthInfo"
 }
+
+{
+  "type": "MalformedJson"
+}
 ```
 
 ## UpdateRequestEvent
@@ -455,12 +459,17 @@
 
 ```json
 {
+  "type": "RatingRequestSuccess",
   "rating": [
     {
       "playerId": "<int>",
       "wealth": "<int>"
     }
   ]
+}
+
+{
+  "type": "MalformedJson"
 }
 ```
 
