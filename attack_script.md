@@ -31,6 +31,7 @@
 
 ```json
 {
+  "id": "<int>",
   "attackerId": "<int>",
   "victimId": "<int>",
   "sectorId": "<int>",
