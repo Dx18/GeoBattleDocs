@@ -84,7 +84,8 @@
 {
   "type": "AuthorizationEvent",
   "name": "<String>",
-  "password": "<String>"
+  "password": "<String>",
+  "clientVersion": "<String>"
 }
 ```
 
@@ -107,6 +108,12 @@
 }
 
 {
+  "type": "InvalidVersion",
+  "min": "<String>",
+  "max": "<String>"
+}
+
+{
   "type": "MalformedJson"
 }
 
@@ -124,7 +131,8 @@
 {
   "type": "EmailConfirmationEvent",
   "name": "<String>",
-  "code": "<int>"
+  "code": "<int>",
+  "clientVersion": "<String>"
 }
 ```
 
@@ -149,6 +157,12 @@
 
 {
   "type": "DoesNotExist"
+}
+
+{
+  "type": "InvalidVersion",
+  "min": "<String>",
+  "max": "<String>"
 }
 
 {
