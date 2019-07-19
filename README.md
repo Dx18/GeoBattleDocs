@@ -19,3 +19,5 @@
 Описание исследований: [research.md](research.md).
 
 Описание сценариев атаки: [attack_script.md](attack_script.md).
+
+Описание версионирования клиентской части: [versioning.md](versioning.md).
